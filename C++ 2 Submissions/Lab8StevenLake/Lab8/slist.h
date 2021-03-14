@@ -1,0 +1,18 @@
+#pragma once
+#include "node.h"
+
+class slist {
+private:
+    node* head;
+    node* tail;
+    int count;
+public:
+    slist();
+    ~slist();
+    void append(int);
+    int size() const;
+    int get(int) const;
+    void insert(int, int); //position and data
+    void remove(int);
+    int index_of(int) const;
+};

@@ -1,0 +1,18 @@
+#Author:	Steven Lake
+#Student ID:	*20502948
+#E-Mail:	Slake2@uco.edu
+#CRN:	15441 IVE
+#Course:	CMSC 2123 – Discrete Structures
+#Assignment:	p02
+#Due:	September 21, 2020
+
+obj = p02.o List02.o
+
+p02: ${obj}
+	g++ -o p02 ${obj}
+a.exe: p02.o List02.o
+
+p02.o: p02.cpp List02.h
+	g++ -g -c p02.cpp
+List02.o: List02.cpp List02.h
+	g++ -g -c List02.cpp
